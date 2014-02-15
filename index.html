@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>index.html</title>
+<script language="JavaScript" src="./js/prototype.js"></script>
+<script type="text/javascript">
+<!--
+/*
+ * Update images.
+ */
+function update_images() {
+    var images = $$('img.updatable-img');
+    var image;
+    var size = images.length;
+    var n;
+    var src;
+
+    for(n = 0; n < size; n++) {
+        image = images[n];
+        if (image == "undefined") {
+            continue;
+        }
+        src = image.src;
+        src = src.replace(/\?.*$/,"");
+        image.src = src + '?' + (new Date()).getTime();
+    }
+    setTimeout("update_images()",1000);
+}
+// -->
+</script>
+</head>
+<body onload="update_images()">
+<h1>ピッコロゲーム</h1>
+
+<img class="updatable-img" src="./client_scripts/test_picture.jpg" alt="picture">
+</body>
+</html>
