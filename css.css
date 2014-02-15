@@ -1,0 +1,48 @@
+img 
+{
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+table.zahyo{
+    border-top:1px solid #004060;
+    border-left:1px solid #004060;
+    border-collapse:collapse;
+    empty-cells:show;
+}
+
+.zahyo caption
+{
+	font-weight:bold;
+	margin:0px 0px 4px 0px;
+	text-align:left;
+}
+
+.zahyo th{
+    border-right:1px solid #004060;
+    border-bottom:1px solid #004060;
+    color:#ffffff;
+    background-color:#155590;
+    background-position:left top;
+    text-align:center;
+    padding: 2px 5px 2px 5px;
+}
+
+.zahyo td {
+    border-right:1px solid #004060;
+    border-bottom:1px solid #004060;
+    padding: 2px 5px 2px 5px;
+}
+
+.upload_image 
+{
+	border:2px solid #506090;
+	margin:5px 5px 5px 0px;
+}
+
+#logo 
+{
+	background-image:url("./logo/toshiba.gif");
+	width:160px; 
+	height:100px;
+}
